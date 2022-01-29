@@ -40,8 +40,8 @@ docker run -v /path/to/local/folder/:/data/ \
  --sysctl net.ipv6.conf.all.forwarding=1 \
  --sysctl net.ipv4.ip_forward=1 \
  --cap-add=NET_ADMIN \
- --restart unless-stopped
- --name test kostamilorava/openvpn-server
+ --restart unless-stopped \
+ --name openvpn-server kostamilorava/openvpn-server
 ```
 
 Docker repository url: `https://hub.docker.com/repository/docker/kostamilorava/openvpn-server`
