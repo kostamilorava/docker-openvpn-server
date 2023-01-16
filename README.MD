@@ -46,6 +46,18 @@ docker run -v /path/to/local/folder/:/data/ \
 
 Docker repository url: `https://hub.docker.com/repository/docker/kostamilorava/openvpn-server`
 
+## Connect more than 254 users to server
+
+I had situation when I needed to connect more than 254 clients (with same certficate)
+
+For this, set this in run.sh:
+
+`OVPN_SERVER=10.1.0.0/0`
+
+Also, don't forget to change this line in server.conf:
+
+`server 10.1.0.0 255.255.0.0`
+
 ## Note!
 
 This package was made for my personal usage. So if there is not enough information, do not judge me. Will be glad to
