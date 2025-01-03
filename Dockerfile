@@ -1,4 +1,3 @@
-# Use alpine os, smallest image
 FROM alpine:latest
 
 LABEL maintainer="Kosta Milorava <kosta.milorava@gmail.com>"
